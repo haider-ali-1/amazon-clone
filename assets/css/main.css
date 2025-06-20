@@ -13,7 +13,6 @@
 .hero-container .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, var(--clr-gray-200) 0%, transparent 50%);
   z-index: 1;
 }
 
@@ -22,6 +21,7 @@
   height: 20px;
   top: 50%;
   outline: none;
+  display: none;
 }
 
 .swiper.hero :is(.swiper-button-next, .swiper-button-prev) :is(svg) {
@@ -238,7 +238,16 @@
 }
 
 @media (min-width: 768px) {
+  .hero-container .overlay {
+    background: linear-gradient(
+      to top,
+      var(--clr-gray-200) 0%,
+      transparent 50%
+    );
+  }
+
   .swiper.hero :is(.swiper-button-next, .swiper-button-prev) {
+    display: block;
     top: 37%;
   }
 

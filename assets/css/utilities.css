@@ -1,10 +1,8 @@
 /* Text */
 
-/* prettier-ignore-start */
 .text-xs {
   font-size: 1.2rem;
 }
-/* prettier-ignore-end */
 .text-gray-400 {
   color: var(--clr-gray-400);
 }
@@ -128,4 +126,10 @@
 
 .grid-2 {
   grid-template-columns: 1fr 1fr;
+}
+
+/* Margin */
+
+.block {
+  /* display: block !important; */
 }
