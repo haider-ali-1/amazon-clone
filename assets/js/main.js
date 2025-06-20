@@ -32,15 +32,13 @@ const hamburger = document.querySelector(".hamburger-wrapper");
 const backdropOverlay = document.querySelector(".nav-overlay");
 const navMobile = document.querySelector(".nav-mobile");
 const closeBtn = document.querySelector(".close-nav-btn");
-
-console.log(hamburger);
-console.log(backdropOverlay);
-console.log(navMobile);
+const body = document.querySelector("body");
 
 function navToggler() {
   backdropOverlay.classList.toggle("active");
   navMobile.classList.toggle("active");
   closeBtn.classList.toggle("active");
+  body.classList.toggle("overflow-hidden");
 }
 
 hamburger.addEventListener("click", navToggler);
