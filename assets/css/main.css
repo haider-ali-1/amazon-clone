@@ -292,6 +292,10 @@
     align-items: flex-end;
   }
 
+  .header-bottom-container {
+    padding-block: 6px;
+  }
+
   .header-bottom-container > a {
     display: flex;
   }
