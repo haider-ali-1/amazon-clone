@@ -1,0 +1,94 @@
+:root {
+  --clr-gray-900: hsl(0 0% 6.67%);
+  --clr-gray-850: hsl(0 0% 20%);
+  --clr-gray-800: hsl(0 0% 26.67%);
+  --clr-gray-700: hsl(0 0% 33.33%);
+  --clr-gray-600: hsl(0 0% 60%);
+  --clr-gray-500: hsl(0 0% 66.67%);
+  --clr-gray-400: hsl(0 0% 80%);
+  --clr-gray-350: hsl(0 0% 83.92%);
+  --clr-gray-300: hsl(0 0% 86.67%);
+  --clr-gray-200: hsl(0 0% 90.2%);
+  --clr-gray-150: hsl(0 0% 93.33%);
+  --clr-gray-100: hsl(180 4.17% 94.51%);
+  --clr-gray-50: hsl(180 2.38% 95.88%);
+  --clr-bg-body: hsl(0, 0%, 94%);
+  --clr-white: hsl(0 0% 100%);
+  --clr-charcoal-900: hsl(214.29 26.92% 10.2%);
+  --clr-charcoal-800: hsl(210 28.3% 10.39%);
+  --clr-slate-800: hsl(213.33 27.59% 18.99%);
+  --clr-slate-700: hsl(211.76 23.81% 28.43%);
+  --clr-blue-800: hsl(210 100% 28.43%);
+  --clr-blue-700: hsl(210 100% 33.33%);
+  --clr-blue-600: hsl(210 100% 37.65%);
+  --clr-sky-600: hsl(210 66.36% 38.04%);
+  --clr-sky-300: hsl(204 89.23% 75.29%);
+  --clr-yellow-400: hsl(48.4 100% 53.92%);
+  --clr-orange-600: hsl(33.1 96.77% 47.84%);
+  --clr-orange-400: hsl(35.29 98.95% 70.39%);
+  --clr-black: hsl(0 0% 0%);
+  --clr-transparent: rgba(0, 0, 0, 0);
+}
+
+@font-face {
+  font-family: "Amazon Ember";
+  src: url("../fonts/AmazonEmberDisplay_Rg.ttf") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Amazon Ember";
+  src: url("../fonts/AmazonEmberDisplay_W_Bd.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Amazon Ember", sans-serif;
+  line-height: 1;
+  background-color: var(--clr-gray-200);
+  color: var(--clr-black);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  border: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+  color: inherit;
+}
+
+/* Utilities */

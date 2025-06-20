@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon.com</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="header-top-container container">
+          <div class="logo-wrapper">
+            <a href="index.html">
+              <img
+                src="./assets/images/amazon-logo-transparent.png"
+                alt=""
+                srcset=""
+              />
+            </a>
+          </div>
+          <div class="location-wrapper">
+            <div class="flex items-center gap-1">
+              <img
+                src="./assets/images/location_icon.png"
+                alt="Location Icon"
+                srcset=""
+              />
+              <div>
+                <span class="text-gray-400 text-xs">Deliver to</span>
+                <p class="font-bold">Germany</p>
+              </div>
+            </div>
+          </div>
+          <div class="searchbar-wrapper grow">
+            <form action="" class="flex">
+              <div>
+                <select
+                  name="department"
+                  id="department"
+                  class="h-full border-none"
+                >
+                  <option value="all">All</option>
+                </select>
+              </div>
+              <input
+                type="search"
+                id="search"
+                placeholder="Search Amazon"
+                class="grow h-full border-none"
+              />
+              <button class="h-full border-none">
+                <img src="./assets/images/search_icon.png" alt="" srcset="" />
+              </button>
+            </form>
+          </div>
+
+          <div class="language-wrapper">
+            <div class="flex items-baseline gap-1">
+              <img
+                src="./assets/images/american-flag.png"
+                alt="American Flag"
+              />
+              <p class="font-bold">EN</p>
+              <span class="caret-down"></span>
+            </div>
+          </div>
+
+          <div class="signin-wrapper">
+            <div class="flex flex-column">
+              <span class="text-xs">Hello, Sign in</span>
+              <p class="font-bold">
+                Accounts & lists <span class="caret-down"></span>
+              </p>
+            </div>
+          </div>
+          <div class="orders-wrapper">
+            <div>
+              <span class="text-xs">Returns</span>
+              <p class="font-bold">& Orders</p>
+            </div>
+          </div>
+
+          <div class="cart-wrapper">
+            <div class="flex items-end gap-1">
+              <div class="cart-wrapper--image">
+                <img src="./assets/images/cart_icon.png" alt="Cart Icon" />
+                <span>2</span>
+              </div>
+              <p class="font-bold">Cart</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="header-bottom-container container flex items-center gap-4">
+          <a class="flex items-center gap-2">
+            <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+            <svg
+              height="32px"
+              id="Layer_1"
+              style="enable-background: new 0 0 32 32"
+              version="1.1"
+              viewBox="0 0 32 32"
+              width="32px"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <path
+                d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"
+              />
+            </svg>
+            <span class="font-bold">All</span>
+          </a>
+          <nav>
+            <ul class="flex items-center gap-6">
+              <li><a href="#">Today's Deals</a></li>
+              <li><a href="#">Registry</a></li>
+              <li><a href="#">Prime Video</a></li>
+              <li><a href="#">Gift Cards</a></li>
+              <li><a href="#">Customer Service</a></li>
+              <li><a href="#">Sell</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-container">
+          <!-- Swiper Container -->
+          <div class="swiper hero">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div>
+                  <img src="./assets/images/hero-section-game.jpg" />
+                  <div
+                    class="overlay"
+                    style="--overlay-clr: hsl(0, 0%, 12%)"
+                  ></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img src="./assets/images/hero-section-kitchen.jpg" />
+                  <div class="overlay"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img src="./assets/images/hero-section-toys.jpg" />
+                  <div class="overlay"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img src="./assets/images/hero-section-fashion.jpg" />
+                  <div class="overlay"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <div class="swiper-button-prev">
+              <?xml version="1.0" ?><svg
+                viewBox="0 0 96 96"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title />
+                <path
+                  d="M39.3756,48.0022l30.47-25.39a6.0035,6.0035,0,0,0-7.6878-9.223L26.1563,43.3906a6.0092,6.0092,0,0,0,0,9.2231L62.1578,82.615a6.0035,6.0035,0,0,0,7.6878-9.2231Z"
+                />
+              </svg>
+            </div>
+            <div class="swiper-button-next">
+              <?xml version="1.0" ?><svg
+                viewBox="0 0 96 96"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title />
+                <path
+                  d="M69.8437,43.3876,33.8422,13.3863a6.0035,6.0035,0,0,0-7.6878,9.223l30.47,25.39-30.47,25.39a6.0035,6.0035,0,0,0,7.6878,9.2231L69.8437,52.6106a6.0091,6.0091,0,0,0,0-9.223Z"
+                />
+              </svg>
+            </div>
+
+            <!-- Pagination Dots -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-cards">
+        <div class="section-cards-container container">
+          <p class="description">
+            You are on amazon.com. You can also shop on Amazon Germany for
+            millions of products with fast local delivery.
+            <a href="https://www.amazon.com">Click here to go to amazon.de</a>
+          </p>
+
+          <div class="cards">
+            <div class="card">
+              <h4>Shop for your home essentials</h4>
+              <div class="grow sub-cards grid grid-2">
+                <div class="">
+                  <img
+                    src="./assets/images/CleaningTool_1x._SY116_CB563137408_.jpg"
+                    alt=""
+                  />
+                  <div>
+                    <p>Cleaning Tools</p>
+                  </div>
+                </div>
+                <div class="">
+                  <img
+                    src="./assets/images/HomeStorage_1x._SY116_CB563137408_.jpg"
+                    alt=""
+                  />
+                  <div>
+                    <p>Home Storage</p>
+                  </div>
+                </div>
+                <div class="">
+                  <img
+                    src="./assets/images/HomeDecor_1x._SY116_CB563137408_.jpg"
+                    alt=""
+                  />
+                  <p>Home Decor</p>
+                </div>
+                <div class="">
+                  <img
+                    src="./assets/images/Bedding_1x._SY116_CB563137408_.jpg"
+                    alt=""
+                  />
+                  <p>Bedding</p>
+                </div>
+              </div>
+              <a href="">Discover more in Home</a>
+            </div>
+            <div class="card">
+              <h4>Get your game on</h4>
+              <div class="grow">
+                <img
+                  class="h-full"
+                  src="./assets/images/Fuji_Gaming_store_Dashboard_card_1x_EN._SY304_CB564799420_.jpg"
+                  alt=""
+                />
+              </div>
+              <a href="">Shop Gaming</a>
+            </div>
+            <div class="card">
+              <h4>Fashion trends you like</h4>
+              <div class="grow sub-cards grid grid-2">
+                <div class="">
+                  <img
+                    src="./assets/images/LSS23_SPRING_DT_CAT_CARD_1_x1._SY116_CB595261253_.jpg"
+                    alt=""
+                  />
+                  <div>
+                    <p>Dresses</p>
+                  </div>
+                </div>
+                <div class="">
+                  <img
+                    src="./assets/images/LSS23_SPRING_DT_CAT_CARD_2_x1._SY116_CB595261253_.jpg"
+                    alt=""
+                  />
+                  <p>Knits</p>
+                </div>
+                <div class="">
+                  <img
+                    src="./assets/images/LSS23_SPRING_DT_CAT_CARD_3_x1._SY116_CB595261253_.jpg"
+                    alt=""
+                  />
+                  <p>Jacket</p>
+                </div>
+                <div class="">
+                  <img
+                    src="./assets/images/LSS23_SPRING_DT_CAT_CARD_4_x1._SY116_CB595261253_.jpg"
+                    alt=""
+                  />
+                  <p>Jewellery</p>
+                </div>
+              </div>
+              <a href="">Explore More</a>
+            </div>
+            <div class="card">
+              <h4>Top categories in kitchen appliances</h4>
+              <div class="sub-cards sub-cards--kitchen">
+                <div class="">
+                  <img src="./assets/images/313wAT6Iy2L._SY160_.jpg" alt="" />
+                  <p>Cooker</p>
+                </div>
+                <div class="flex flex-column">
+                  <img
+                    src="./assets/images/21W7-lndINL._SY75_.jpg"
+                    class="grow"
+                    alt=""
+                  />
+                  <p>Coffee</p>
+                </div>
+                <div>
+                  <img src="./assets/images/21B-NkA9p-L._SY75_.jpg" alt="" />
+                  <p>Pots and Pans</p>
+                </div>
+                <div class="flex flex-column">
+                  <img
+                    src="./assets/images/217GQ1a2QzL._SY75_.jpg"
+                    class="grow"
+                    alt=""
+                  />
+                  <p>Kettles</p>
+                </div>
+              </div>
+              <a href="">Explore all products in kitchen</a>
+            </div>
+
+            <div class="card">
+              <h4>Shop Fashion for less</h4>
+              <div class="grow sub-cards grid grid-2">
+                <div class="">
+                  <img
+                    src="./assets/images/jeans_DQC_APR_TBYB_W_BOTTOMS_1x._SY116_CB624172947_.jpg"
+                    alt=""
+                  />
+                  <p>Jeans under $50</p>
+                </div>
+                <div class="">
+                  <img
+                    src="./assets/images/tops_DQC_APR_TBYB_W_TOPS_1x._SY116_CB623353881_.jpg"
+                    alt=""
+                  />
+                  <p>Tops under $25</p>
+                </div>
+                <div class="">
+                  <img
+                    src="./assets/images/dresses_DQC_APR_TBYB_W_DRESSES_1x._SY116_CB623353881_.jpg"
+                    alt=""
+                  />
+                  <p>Dresses under $30</p>
+                </div>
+                <div class="">
+                  <img
+                    src="./assets/images/shoes_DQC_APR_TBYB_W_SHOES_1x._SY116_CB624172947_.jpg"
+                    alt=""
+                  />
+                  <p>Shoes under $50</p>
+                </div>
+              </div>
+              <a href="">See all deals</a>
+            </div>
+            <div class="card">
+              <h4>New home arrivals under $50</h4>
+              <div class="grow sub-cards grid grid-2">
+                <div class="">
+                  <img
+                    src="./assets/images/kitchen_DesktopQuadCat_186x116_kitchen_B0126LMDFK_01.23._SY116_CB619238939_.jpg"
+                    alt=""
+                  />
+                  <p>kitchen & Dining</p>
+                </div>
+                <div class="">
+                  <img
+                    src="./assets/images//improve_Home_Flip_Summer_2024_316_HP_NewArrivals_QuadCard_D_02_1x._SY116_CB555960040_.jpg"
+                    alt=""
+                  />
+                  <p>Home Improvement</p>
+                </div>
+                <div class="">
+                  <img
+                    src="./assets/images/decor_Home_Flip_Summer_2024_317_HP_NewArrivals_QuadCard_D_03_1x._SY116_CB555960040_.jpg"
+                    alt=""
+                  />
+                  <p>Decor</p>
+                </div>
+                <div class="">
+                  <img
+                    src="./assets/images/bedding_Home_Flip_Summer_2024_318_HP_NewArrivals_QuadCard_D_04_1x._SY116_CB555960040_.jpg"
+                    alt=""
+                  />
+                  <p>Bedding & Bath</p>
+                </div>
+              </div>
+              <a href="">See all deals</a>
+            </div>
+            <div class="card">
+              <h4>Toys Under $25</h4>
+              <div class="grow">
+                <img
+                  class="h-full"
+                  src="./assets/images/toysFuji_Desktop_Single_image_EBF_1x_v3._SY304_CB573698005_.jpg"
+                  alt=""
+                />
+              </div>
+              <a href="">Shop now</a>
+            </div>
+            <div class="card">
+              <h4>Refresh your space</h4>
+              <div class="grow sub-cards grid grid-2">
+                <div class="">
+                  <img
+                    src="./assets/images/dining_DesktopQuadCat_186x116_LP-HP_B08MYX5Q2W_01.23._SY116_CB619238939_.jpg"
+                    alt=""
+                  />
+                  <p>Dining</p>
+                </div>
+                <div class="">
+                  <img
+                    src="./assets/images/home_DesktopQuadCat_186x116_home_B08RCCP3HV_01.23._SY116_CB619238939_.jpg"
+                    alt=""
+                  />
+                  <p>Home</p>
+                </div>
+                <div class="">
+                  <img
+                    src="./assets/images/kitchen_DesktopQuadCat_186x116_kitchen_B0126LMDFK_01.23._SY116_CB619238939_.jpg"
+                    alt=""
+                  />
+                  <p>Kitchen</p>
+                </div>
+                <div class="">
+                  <img
+                    src="./assets/images/beauty_DesktopQuadCat_186x116_health-beauty_B07662GN57_01.23._SY116_CB619238939_.jpg"
+                    alt=""
+                  />
+                  <p>Health & Beauty</p>
+                </div>
+              </div>
+              <a href="">See all deals</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="popular-products">
+        <div class="popular-products-container container">
+          <!-- Slider main container -->
+          <div class="swiper popular-products-swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/1_618NdYdW7gL._AC_SY200_.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/2_61GZjzhc8ZL._AC_SY200_.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/3_61e9oW8XdML._AC_SY200_.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/4_718f8oZHkSL._AC_SY200_.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/5_617J7KJPFhL._AC_SY200_.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/6_61rM9q4cUyL._AC_SY200_.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/7_71G1bwds-SL._AC_SY200_.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/8_41l5xQ8UKYL._AC_SY200_.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/9_51f96z7UdtL._AC_SY200_.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/10_81PQXoOVfVL._AC_SY200_.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/11_712AItl4iUL._AC_SY200_.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/12_51M3SIxVmbL._AC_SY200_.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/13_61Qk6tKPGPL._AC_SY200_.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/14_71Eks0yL3kL._AC_SY200_.jpgF"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="signin-bottom">
+        <div class="signin-bottom-wrapper">
+          <div class="container">
+            <h1>See personalized recommendations</h1>
+            <button>Sign in</button>
+            <p>New customer? <a href="">Start here</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-back-to-top">
+        <div class="footer-container">
+          <a href="#top">Back to top</a>
+        </div>
+      </div>
+      <div class="footer-top">
+        <div class="footer-container cards--footer">
+          <div class="card--footer">
+            <ul>
+              <li><a href="">Get to Know Us</a></li>
+              <li><a href="">Careers</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">About Amazon</a></li>
+              <li><a href="">Investor Relations</a></li>
+              <li><a href="">Amazon Devices</a></li>
+              <li><a href="">Amazon Science</a></li>
+            </ul>
+          </div>
+          <div class="card--footer">
+            <ul>
+              <li><a href="">Make Money with Us</a></li>
+              <li><a href="">Sell products on Amazon</a></li>
+              <li><a href="">Sell on Amazon Business</a></li>
+              <li><a href="">Sell apps on Amazon</a></li>
+              <li><a href="">Become an Affiliate</a></li>
+              <li><a href="">Advertise Your Products</a></li>
+              <li><a href="">Self-Publish with Us</a></li>
+              <li><a href="">Host an Amazon Hub</a></li>
+              <li>
+                <a href="" class="flex justify-center gap-1">
+                  <span class="text-xs">
+                    <?xml version="1.0" ?>
+                    <svg
+                      fill="#ccc"
+                      viewBox="0 0 96 96"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-sm"
+                    >
+                      <title />
+                      <path
+                        d="M69.8437,43.3876,33.8422,13.3863a6.0035,6.0035,0,0,0-7.6878,9.223l30.47,25.39-30.47,25.39a6.0035,6.0035,0,0,0,7.6878,9.2231L69.8437,52.6106a6.0091,6.0091,0,0,0,0-9.223Z"
+                      />
+                    </svg>
+                  </span>
+                  See More Make Money with Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="card--footer">
+            <ul>
+              <li><a href="">Amazon Payment Products</a></li>
+              <li><a href="">Amazon Business Card</a></li>
+              <li><a href="">Shop with Points</a></li>
+              <li><a href="">Reload Your Balance</a></li>
+              <li><a href="">Amazon Currency Converter</a></li>
+            </ul>
+          </div>
+          <div class="card--footer">
+            <ul>
+              <li><a href="">Let Us Help You</a></li>
+              <li><a href="">Amazon and Covid-19</a></li>
+              <li><a href="">Your Account</a></li>
+              <li><a href="">Your Orders</a></li>
+              <li><a href="">Shipping Rates & Policies</a></li>
+              <li><a href="">Returns & Replacements</a></li>
+              <li><a href="">Manage Your Content and Devices</a></li>
+              <li><a href="">Help</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="setting">
+          <div class="footer-container flex justify-center items-center gap-4">
+            <div>
+              <a href="index.html"
+                ><img
+                  src="./assets/images/amazon-logo-transparent.png"
+                  alt="Amazon Logo"
+                  srcset=""
+              /></a>
+            </div>
+            <div class="flex flex-wrap justify-center gap-3">
+              <button class="flex items-center gap-2">
+                <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                <svg
+                  id="Layer_1"
+                  style="enable-background: new 0 0 512 512"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <path
+                    d="M256,48c-0.1,0-0.1,0-0.2,0c0,0,0,0-0.1,0c-0.1,0-0.2,0-0.2,0C140.8,48.3,48,141.3,48,256c0,114.7,92.8,207.7,207.5,208  c0.1,0,0.2,0,0.2,0c0,0,0.1,0,0.1,0c0.1,0,0.1,0,0.2,0c114.9,0,208-93.1,208-208C464,141.1,370.9,48,256,48z M264.3,172.5  c22.1-0.6,43.5-3.5,64.2-8.5c6.2,24.5,10.1,52.8,10.7,83.8h-74.9V172.5z M264.3,155.8V66c22.4,6.2,45.2,36.1,59.6,82  C304.7,152.6,284.8,155.2,264.3,155.8z M247.7,65.8v90.1c-20.7-0.6-40.8-3.3-60.1-8C202.2,101.7,225.1,71.6,247.7,65.8z   M247.7,172.5v75.2h-75.4c0.6-31,4.5-59.3,10.7-83.8C203.8,168.9,225.5,171.9,247.7,172.5z M155.5,247.7H64.9  c1.8-42.8,17.8-82,43.3-113c18.5,10.2,38.2,18.6,58.8,24.8C160.2,186,156.2,215.9,155.5,247.7z M155.5,264.3  c0.6,31.7,4.6,61.7,11.4,88.2c-20.6,6.3-40.2,14.6-58.8,24.8c-25.5-31-41.4-70.2-43.3-113H155.5z M172.3,264.3h75.4v75.1  c-22.2,0.6-43.9,3.6-64.7,8.7C176.8,323.6,172.9,295.3,172.3,264.3z M247.7,356.1v90.2c-22.6-5.9-45.5-35.9-60.1-82.1  C206.9,359.4,227,356.7,247.7,356.1z M264.3,446v-90c20.5,0.6,40.4,3.3,59.7,7.9C309.5,409.9,286.8,439.8,264.3,446z M264.3,339.4  v-75.1h74.9c-0.6,30.9-4.5,59.2-10.7,83.7C307.8,343,286.4,340,264.3,339.4z M355.9,264.3h91.2c-1.8,42.8-17.8,81.9-43.3,113  c-18.7-10.3-38.5-18.7-59.3-25C351.3,325.8,355.3,296,355.9,264.3z M355.9,247.7c-0.6-31.7-4.6-61.6-11.3-88.1  c20.8-6.3,40.6-14.7,59.2-24.9c25.5,31,41.5,70.2,43.3,113.1H355.9z M392.4,121.9c-16.6,8.8-34,16.1-52.3,21.6  c-9.7-31.3-23.4-56.8-39.5-73.6C336,78.4,367.6,96.8,392.4,121.9z M210.8,70.1c-16.1,16.7-29.7,42.2-39.3,73.3  c-18.1-5.5-35.4-12.7-51.8-21.5C144.2,96.9,175.6,78.6,210.8,70.1z M119.6,390c16.4-8.8,33.8-16,51.8-21.5  c9.7,31.2,23.3,56.6,39.4,73.4C175.6,433.4,144.2,415.1,119.6,390z M300.6,442.1c16.2-16.8,29.8-42.3,39.6-73.7  c18.3,5.5,35.7,12.8,52.3,21.6C367.7,415.2,336,433.6,300.6,442.1z"
+                  />
+                </svg>
+                <span>English</span>
+                <?xml version="1.0" encoding="utf-8"?><svg
+                  class="up-down"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 99.42 122.88"
+                  style="enable-background: new 0 0 99.42 122.88"
+                  xml:space="preserve"
+                >
+                  <style type="text/css">
+                    .st0 {
+                      fill-rule: evenodd;
+                      clip-rule: evenodd;
+                    }
+                  </style>
+                  <g>
+                    <path
+                      class="st0"
+                      d="M49.71,0L0,51.7c33.14,0,66.28,0,99.42,0L49.71,0L49.71,0z M49.71,122.88L0,71.18c33.14,0,66.28,0,99.42,0 L49.71,122.88L49.71,122.88z"
+                    />
+                  </g>
+                </svg>
+              </button>
+
+              <button class="flex items-center gap-2">
+                <?xml version="1.0" ?>
+                <svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+                  <title />
+                  <path
+                    d="M54,42H42a6,6,0,0,1,0-12H66a6,6,0,0,0,0-12H54V12a6,6,0,0,0-12,0v6a18,18,0,0,0,0,36H54a6,6,0,0,1,0,12H30a6,6,0,0,0,0,12H42v6a6,6,0,0,0,12,0V78a18,18,0,0,0,0-36Z"
+                  />
+                </svg>
+                <span>USD - U.S. Dollar</span>
+              </button>
+
+              <button class="flex items-center gap-2">
+                <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                <img
+                  src="./assets/images/american-flag.png"
+                  alt=""
+                  class="american-flag"
+                />
+                <span>United States</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-container">
+          <div class="card--footer-bottom">
+            <a href="">
+              <h4>Amazon Music</h4>
+              <span
+                >Stream millions <br />
+                of songs</span
+              >
+            </a>
+          </div>
+          <div class="card--footer-bottom">
+            <a href="">
+              <h4>Amazon Ads</h4>
+              <span
+                >Reach customers <br />wherever they<br />spend their time</span
+              >
+            </a>
+          </div>
+          <div class="card--footer-bottom">
+            <a href="">
+              <h4>6pm</h4>
+              <span>Score deals <br />on fashion brands</span>
+            </a>
+          </div>
+          <div class="card--footer-bottom">
+            <a href="">
+              <h4>AbeBooks</h4>
+              <span>Books, art <br />& collectibles</span>
+            </a>
+          </div>
+          <div class="card--footer-bottom">
+            <a href="">
+              <h4>ACX</h4>
+              <span>Audiobook Publishing <br />Made Easy</span>
+            </a>
+          </div>
+          <div class="card--footer-bottom">
+            <a href="">
+              <h4>Sell on Amazon</h4>
+              <span>Start a Selling Account</span>
+            </a>
+          </div>
+          <div class="card--footer-bottom">
+            <a href="">
+              <h4>Veeqo</h4>
+              <span>Shipping Software <br />Inventory Management</span>
+            </a>
+          </div>
+          <div class="card--footer-bottom">
+            <a href="">
+              <h4>Amazon Business</h4>
+              <span>Everything For <br />Your Business</span>
+            </a>
+          </div>
+          <div class="card--footer-bottom">
+            <a href="">
+              <h4>AmazonGlobal</h4>
+              <span>Ship Orders <br />Internationally</span>
+            </a>
+          </div>
+          <div class="card--footer-bottom">
+            <a href="">
+              <h4>Amazon Web Services</h4>
+              <span>Scalable Cloud <br />Computing Services</span>
+            </a>
+          </div>
+          <div class="card--footer-bottom">
+            <a href="">
+              <h4>Audible</h4>
+              <span>Listen to Books & Original <br />Audio Performances</span>
+            </a>
+          </div>
+          <div class="card--footer-bottom">
+            <a href="">
+              <h4>Box Office Mojo</h4>
+              <span>Find Movie <br />Box Office Data</span>
+            </a>
+          </div>
+          <div class="card--footer-bottom">
+            <a href="">
+              <h4>Goodreads</h4>
+              <span>Book reviews <br />& recommendations</span>
+            </a>
+          </div>
+          <div class="card--footer-bottom">
+            <a href="">
+              <h4>IMDb</h4>
+              <span>Movies, TV <br />& Celebrities</span>
+            </a>
+          </div>
+          <div class="card--footer-bottom">
+            <a href="">
+              <h4>IMDbPro</h4>
+              <span>Get Info Entertainment <br />Professionals Need</span>
+            </a>
+          </div>
+          <div class="card--footer-bottom">
+            <a href="">
+              <h4>Kindle Direct Publishing</h4>
+              <span>Indie Digital & Print Publishing <br />Made Easy</span>
+            </a>
+          </div>
+          <div class="card--footer-bottom">
+            <a href="">
+              <h4>Prime Video Direct</h4>
+              <span>Video Distribution <br />Made Easy</span>
+            </a>
+          </div>
+          <div class="card--footer-bottom">
+            <a href="">
+              <h4>Shopbop</h4>
+              <span>Designer <br />Fashion Brands</span>
+            </a>
+          </div>
+          <div class="card--footer-bottom">
+            <a href="">
+              <h4>Woot!</h4>
+              <span>Deals and <br />Shenanigans</span>
+            </a>
+          </div>
+          <div class="card--footer-bottom">
+            <a href="">
+              <h4>Zappos</h4>
+              <span>Shoes & <br />Clothing</span>
+            </a>
+          </div>
+          <div class="card--footer-bottom">
+            <a href="">
+              <h4>Ring</h4>
+              <span>Smart Home <br />Security Systems</span>
+            </a>
+          </div>
+          <div class="card--footer-bottom empty-div">&nbsp;</div>
+          <div class="card--footer-bottom">
+            <a href="">
+              <h4>eero WiFi</h4>
+              <span>Stream 4K Video <br />in Every Room</span>
+            </a>
+          </div>
+          <div class="card--footer-bottom">
+            <a href="">
+              <h4>Blink</h4>
+              <span>Smart Security <br />for Every Home</span>
+            </a>
+          </div>
+          <div class="card--footer-bottom">
+            <a href="">
+              <h4>Neighbors App</h4>
+              <span>Real-Time Crime <br />& Safety Alerts</span>
+            </a>
+          </div>
+          <div class="card--footer-bottom">
+            <a href="">
+              <h4>Amazon Subscription Boxes</h4>
+              <span>Top subscription boxes – right to your door</span>
+            </a>
+          </div>
+          <div class="card--footer-bottom">
+            <a href="">
+              <h4>PillPack</h4>
+              <span>Pharmacy Simplified</span>
+            </a>
+          </div>
+          <div class="card--footer-bottom empty-div">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <div class="footer-container flex flex-column items-center gap-4">
+          <div class="flex justify-center">
+            <a href="">Conditions of Use</a>
+            <a href="">Privacy Notice</a>
+            <a href="">Consumer Health Data Privacy Disclosure</a>
+            <a href="">Your Ads Privacy Choices</a>
+            <!-- <span></span> -->
+          </div>
+          <div>&copy; 1996-2025, Amazon.com, Inc. or its affiliates</div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js" defer></script>
+  </body>
+</html>

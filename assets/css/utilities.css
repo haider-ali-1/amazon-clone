@@ -1,0 +1,131 @@
+/* Text */
+
+/* prettier-ignore-start */
+.text-xs {
+  font-size: 1.2rem;
+}
+/* prettier-ignore-end */
+.text-gray-400 {
+  color: var(--clr-gray-400);
+}
+/*  */
+.font-bold {
+  font-weight: 700;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-sm {
+  width: 8px;
+}
+
+/* Border */
+
+.border-none {
+  border: none;
+}
+
+/* Border End */
+
+.leading-none {
+  line-height: 1;
+}
+
+/* Utilities End */
+
+/* Flex Utilities */
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-end {
+  align-items: end;
+}
+
+.items-baseline {
+  align-items: baseline;
+}
+
+.self-end {
+  align-self: flex-end;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+.gap-2 {
+  gap: 0.5rem;
+}
+.gap-3 {
+  gap: 0.75rem;
+}
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 10px;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.grid-2 {
+  grid-template-columns: 1fr 1fr;
+}

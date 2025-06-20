@@ -1,0 +1,16 @@
+.caret-down {
+  display: inline-block;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid var(--clr-gray-500);
+}
+
+.card {
+  padding: 10px 20px;
+  background-color: var(--clr-white);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1 1 24%;
+  min-width: 250px;
+}
