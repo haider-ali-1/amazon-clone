@@ -204,7 +204,7 @@ header {
   background-color: var(--clr-white);
   z-index: 30;
   /* overflow: hidden; */
-  transform: translateX(-100%);
+  transform: translateX(-101%);
   transition: transform 0.3s ease-in;
 }
 
